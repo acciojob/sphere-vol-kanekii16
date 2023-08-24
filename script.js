@@ -11,7 +11,7 @@ function volume_sphere() {
 
 	let temp = document.getElementById("volume");
 	temp.value = ans;
-	console.log(temp.value);
+	
 
 } 
 
