@@ -9,9 +9,9 @@ function volume_sphere() {
 	ans = ans * 3.14;
 	ans = ans * r *r *r;
 
-	// let temp = document.getElementById("volume");
-	// temp.value = ans;
-	return ans;
+	let temp = document.getElementById("volume");
+	temp.value = ans;
+
 } 
 
 window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
