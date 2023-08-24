@@ -3,12 +3,15 @@ function volume_sphere() {
 
 	let obj = document.getElementById("radius");
 
-	let r = obj.text;
+	let r = obj.value;
 
-	let ans = 4 / 3;
+	let ans = 4/3;
 	ans = ans * 3.14;
 	ans = ans * r *r *r;
-  
+
+	let temp = document.getElementById("volume");
+	temp.value = ans;
+	return ans;
 } 
 
 window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
